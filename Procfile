@@ -1,1 +1,1 @@
-web: gunicorn tiny_web_app: app --log-file -
+web: gunicorn tiny_web_app:app --log-file -
