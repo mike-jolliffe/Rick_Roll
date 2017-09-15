@@ -1,4 +1,4 @@
-from flask import Flask, Response, request, render_template
+from flask import Flask, make_response, Response, request, render_template
 
 app = Flask(__name__)
 
@@ -14,9 +14,9 @@ def hello():
 
 @app.route('/rick_roll.mp3', methods=['GET', 'POST'])
 def song():
-    response = flask.make_response(render_template('audio.html'))
+    response = make_response(render_template('audio.html'))
 
-    response.headers['Content-Type'] = 'audio/mp3'
+    #response.mimetype = 'audio/mpeg'
     return response
 
 
