@@ -7,7 +7,6 @@ def hello():
     response = '''<?xml version="1.0" encoding="UTF-8"?>
                     <Response>
                         <Say>Hello, Mike! You have been rick rolled.</Say>
-                        <Play>https://api.twilio.com/cowbell.mp3</Play>
                         <Play>https://afternoon-gorge-22076.herokuapp.com/rick_roll.mp3</Play>
                     </Response>'''
     return Response(response, mimetype='text/xml')
