@@ -14,7 +14,7 @@ def hello():
 
 @app.route('/rick_roll.mp3', methods=['GET', 'POST'])
 def song():
-    return render_template('audio.html')
+    return Response(render_template('audio.html'), mimetype='audio/mpeg')
 
 
 if __name__ == '__main__':
