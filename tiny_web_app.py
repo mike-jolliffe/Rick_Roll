@@ -14,7 +14,10 @@ def hello():
 
 @app.route('/rick_roll.mp3', methods=['GET', 'POST'])
 def song():
-    return Response(render_template('audio.html'), mimetype='audio/mpeg')
+    response = flask.make_response(render_template('audio.html'))
+
+    response.headers(['Content-Type'] = 'audio/mp3')
+    return response
 
 
 if __name__ == '__main__':
