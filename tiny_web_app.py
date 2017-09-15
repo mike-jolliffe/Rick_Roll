@@ -16,7 +16,7 @@ def hello():
 def song():
     response = flask.make_response(render_template('audio.html'))
 
-    response.headers(['Content-Type'] = 'audio/mp3')
+    response.headers['Content-Type'] = 'audio/mp3'
     return response
 
 
