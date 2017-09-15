@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-    response = '''<?xml version="1.0" encoding="UTF-8" ?>
+    response = '''<?xml version="1.0" encoding="UTF-8"?>
                     <Response>
                         <Say>Hello, Mike! You have been rick rolled.</Say>
                         <Play>https://afternoon-gorge-22076.herokuapp.com/rick_roll.mp3</Play>
