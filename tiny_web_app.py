@@ -13,7 +13,7 @@ def hello():
 
 @app.route('/rick_roll.mp3')
 def song():
-    
+
     return app.send_static_file('rick_roll.mp3')
 
 
