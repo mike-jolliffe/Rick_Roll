@@ -12,12 +12,13 @@ def hello():
                     </Response>'''
     return Response(response, mimetype='text/xml')
 
-@app.route('/rick_roll.mp3', methods=['GET', 'POST'])
+@app.route('/rick_roll.mp3')
 def song():
-    response = make_response(render_template('audio.html'))
-
-    #response.mimetype = 'audio/mpeg'
-    return response
+    # response = make_response(render_template('audio.html'))
+    #
+    # #response.mimetype = 'audio/mpeg'
+    # return response
+    return app.send_static_file('rick_roll.mp3')
 
 
 if __name__ == '__main__':
