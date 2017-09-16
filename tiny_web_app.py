@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     response = '''<?xml version="1.0" encoding="UTF-8"?>
                     <Response>
-                        <Say>Hello, Julia. Mike says happy Friday and he looks forward to games. Also, you have just been rick rolled.</Say>
+                        <Say>Hello there Jacob. It's your good buddy Mike. Happy Friday. Also, you have just been rick rolled.</Say>
                         <Play>https://afternoon-gorge-22076.herokuapp.com/rick_roll.mp3</Play>
                     </Response>'''
     return Response(response, mimetype='text/xml')
