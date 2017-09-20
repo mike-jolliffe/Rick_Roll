@@ -13,4 +13,4 @@ Here's the [website](https://afternoon-gorge-22076.herokuapp.com/)
 
 
 ## Use the Twilio API to Send Outgoing Calls
-1. Implementation details can be found [here](../Projects/Rick_Roll/twilio_api.py)
+1. Implementation code can be found [here](https://github.com/mike-jolliffe/Projects/blob/master/Rick_Roll/twilio_api.py)
